@@ -15,6 +15,7 @@ services:
     image: "gitprdemo:dev"
     ports: []
     volumes:
+    - "/Users/michalsitek/.microsoft/usersecrets:/home/app/.microsoft/usersecrets"
     - "/Users/michalsitek/.nuget/packages:/home/app/.nuget/packages"
     - "/Users/michalsitek/repos/GitPrDemo/GitPrDemo:/app:rw"
     - "/Users/michalsitek/repos/GitPrDemo:/src:rw"

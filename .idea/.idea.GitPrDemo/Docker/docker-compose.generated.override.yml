@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  gitprdemo:
+    build:
+      context: "/Users/michalsitek/repos/GitPrDemo"
+      dockerfile: "GitPrDemo/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/GitPrDemo.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "gitprdemo:dev"
+    ports: []
+    volumes:
+    - "/Users/michalsitek/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/michalsitek/repos/GitPrDemo/GitPrDemo:/app:rw"
+    - "/Users/michalsitek/repos/GitPrDemo:/src:rw"
+    working_dir: "/app"

@@ -1,0 +1,6 @@
+﻿services:
+  gitprdemo:
+    image: gitprdemo
+    build:
+      context: .
+      dockerfile: GitPrDemo/Dockerfile

@@ -24,6 +24,15 @@ public class PeselValidatorTests
         
         act.Should().Throw<ArgumentException>();
     }
+    
+    [Fact]
+    public void TestThrowIfInvalid_WithInvalidChecksum()
+    {
+        var invalidPesel = "12345678901"; // invalid checksum
+        var act = () => PeselValidator.ThrowIfInvalid(invalidPesel);
+        
+        act.Should().Throw<ArgumentException>();
+    }
 
     [Theory]
     [MemberData(nameof(PeselValidationData))]

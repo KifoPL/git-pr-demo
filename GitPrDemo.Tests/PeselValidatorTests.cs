@@ -25,12 +25,6 @@ public class PeselValidatorTests
         act.Should().Throw<ArgumentException>();
     }
 
-    [Fact]
-    public void InvalidTest()
-    {
-        false.Should().BeTrue("showcase of failed test in CI checks");
-    }
-
     [Theory]
     [MemberData(nameof(PeselValidationData))]
     public void TestIsValid(string pesel, bool isValidExpected, string testReason)

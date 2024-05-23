@@ -6,7 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PublishAot>true</PublishAot>
-        <InvariantGlobalization>true</InvariantGlobalization>
+        <InvariantGlobalization>false</InvariantGlobalization>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
         <UserSecretsId>dd721f4e-f67f-4bb0-8982-8e8ccc415b4e</UserSecretsId>
     </PropertyGroup>
